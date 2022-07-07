@@ -2,7 +2,7 @@
 
 A NodeMcu which measures temperature and humidity and serves the data via a simple JSON API, and a web client which displays the data in a user friendly way! 
 
-# Usage
+## Usage
 If you too want to measure the temperature and humidity in your room you will need a bunch of stuff!
 
 Hardware:
