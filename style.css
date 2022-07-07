@@ -1,0 +1,85 @@
+*,
+*::before,
+*::after
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+:root
+{
+    --cold: hsl(184, 69%, 63%);
+    --cool: hsl(231, 100%, 50%);
+    --normal: rgb(252, 207, 7);
+    --warm: rgb(252, 117, 7);
+    --hot: rgb(255, 41, 41);
+    --dead: rgb(119, 0, 0);
+    --temperature-icon-color: #999;
+    --humidity-icon-color: #0077ff;
+}
+
+html, body
+{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000;
+    color: #fff;
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.card
+{
+    --font-size: 4rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: max-content;
+    min-width: 15ch;
+    font-size: 2rem;
+}
+
+.card ion-icon
+{
+    font-size: var(--font-size);
+    width: var(--font-size);
+    height: var(--font-size);
+}
+
+.card.temperature ion-icon
+{
+    color: var(--temperature-icon-color);
+}
+
+.card.humidity ion-icon
+{
+    color: var(--humidity-icon-color);
+}
+
+.card .text
+{
+    display: flex;
+    align-items: center;
+    height: var(--font-size);
+    gap: 0.5rem
+}
+
+.card .value
+{
+    font-size: var(--font-size);
+}
+
+.card .unit
+{
+    color: #aaa;
+    align-self: flex-end;
+}

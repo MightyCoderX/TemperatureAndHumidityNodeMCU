@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NodeMCU Temperature and Humidity</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200;1,300;1,400&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="style.css">
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
+        
+        <script src="index.js" defer></script>
+    </head>
+    <body>
+        <div class="card temperature" title="Temperature">
+            <ion-icon name="thermometer-outline"></ion-icon>
+            <div class="text">
+                <span id="tempValue" class="value">00</span>
+                <span id="tempUnit" class="unit">°C</span>
+            </div>
+        </div>
+        
+        <div class="card humidity" title="Humidity">
+            <ion-icon  name="water-outline"></ion-icon>
+            <div class="text">
+                <span id="humValue" class="value">00</span>
+                <span id="humUnit" class="unit">%</span>
+            </div>
+        </div>
+    </body>
+</html>
